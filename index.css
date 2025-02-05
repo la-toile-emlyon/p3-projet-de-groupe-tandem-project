@@ -28,7 +28,7 @@
   .hero .btn-group {
     position: relative;
     z-index: 2;
-    opacity: 0; /* Masqué par défaut */
+    opacity: 1;
     transform: translateY(10px); /* Décalage vertical initial */
     animation: fadeIn 1s ease forwards; /* Animation d'apparition */
   }
@@ -47,6 +47,7 @@
     animation-delay: 0.6s;
     padding-right: 500px;
   }
+  
   .mockup{
     width: 380px;
     position: absolute;
@@ -173,10 +174,12 @@ div.left {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
+
   .valeur img {
-    width: 80px;
+    width: 20%;
     margin-bottom: 1rem;
   }
+
   
   .valeur h3 {
     font-size: 1.5rem;
@@ -280,6 +283,7 @@ div.left {
     padding: 4rem 1rem;
     background: white;
     text-align: center;
+    box-shadow: 2px 1px 76px 0px rgba(249,132,239,1);
   }
   
   /* Conteneur principal */
@@ -435,6 +439,10 @@ div.left {
     display: flex;
     justify-content: flex-start;
     gap: 1rem; /* Espacement entre les boutons */
+  }
+
+  .btn-group.down {
+    justify-content: center;
   }
   
   .btn-secondary {

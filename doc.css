@@ -28,7 +28,7 @@
 .hero .btn-group {
   position: relative;
   z-index: 2;
-  opacity: 0; /* Masqué par défaut */
+  opacity: 1;
   transform: translateY(10px); /* Décalage vertical initial */
   animation: fadeIn 1s ease forwards; /* Animation d'apparition */
 }
@@ -47,6 +47,7 @@
   animation-delay: 0.6s;
   padding-right: 500px;
 }
+
 .mockup{
   width: 380px;
   position: absolute;
@@ -174,8 +175,11 @@ img .mockup{
 }
 
 .valeur img {
-  width: 80px;
+  width: 20%;
   margin-bottom: 1rem;
+}
+.img-velo{
+  width: 100%;
 }
 
 .valeur h3 {
@@ -189,6 +193,8 @@ img .mockup{
   color: #666;
   line-height: 1.6;
 }
+
+
 
 
 
@@ -220,7 +226,7 @@ img .mockup{
 }
 
 .feature-item img {
-  width: 180px;
+  width: 680px;
   margin-bottom: 0.6rem;
 }
 
@@ -398,6 +404,7 @@ img .mockup{
 
 
 
+
 .persona {
   font-size: 30px;
   margin-top: 20px;
@@ -456,5 +463,9 @@ img .mockup{
   transform: scale(1.05); /* Légère mise en avant */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre renforcée */
 }
+
+
+
+
 
 
