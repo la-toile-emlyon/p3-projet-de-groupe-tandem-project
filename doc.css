@@ -1,0 +1,131 @@
+/* Style.css */
+/*fedi nav*/
+/* HEADER */
+.header {
+  position: absolute; /* Navigation par-dessus la Hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 10; /* S'assurer qu'elle reste au-dessus */
+  transition: background 0.3s ease; /* Effet de transition pour le défilement */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between; /* Espacement entre le logo et les liens */
+  align-items: center; /* Centre le contenu verticalement */
+}
+
+.header .logo {
+  height: 50px; /* Taille du logo */
+  padding-left: 30px;
+}
+
+.header .nav {
+  display: flex; /* Affiche les liens côte à côte */
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative; /* Nécessaire pour l'effet souligné */
+  transition: color 0.3s ease; /* Douce transition pour la couleur */
+}
+
+.header .nav a::after {
+  content: ""; /* Crée une ligne pour souligner */
+  position: absolute;
+  bottom: -5px; /* Position sous le texte */
+  left: 0;
+  width: 0; /* Ligne masquée par défaut */
+  height: 2px; /* Épaisseur de la ligne */
+  background: #58C1B2; /* Couleur de la ligne */
+  transition: width 0.3s ease; /* Animation de la largeur */
+}
+
+.header .nav a:hover::after {
+  width: 100%; /* Affiche la ligne au survol */
+}
+
+.header .nav a:hover {
+  color: #58C1B2; /* Change la couleur du texte au survol */
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size:  200%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.context, .goals, .evolutions, .avenir {
+    padding: 20px;
+    text-align: center;
+}
+
+.context {
+    font-size: 20px;
+    text-align: center;
+}
+
+.context ul {
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+}
+
+.context ul li {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.goals-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.goal {
+    background: linear-gradient(45deg, rgb(0, 221, 255), rgb(0, 221, 255));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.persona {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.persona img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: rgb(0, 221, 255);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
