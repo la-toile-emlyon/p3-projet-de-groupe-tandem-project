@@ -1,1 +1,516 @@
-/* Le code CSS spécifique à la page de documentation */
+/* Le code CSS spécifique à la page d'accueil */
+
+/* SECTION HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1730298756153-a036f709b2a1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero h2,
+.hero p,
+.hero .btn-group {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(10px); /* Décalage vertical initial */
+  animation: fadeIn 1s ease forwards; /* Animation d'apparition */
+}
+
+.hero h2 {
+  font-size: 90px;
+  margin-bottom: 1rem;
+  animation-delay: 0.3s;
+  padding-right: 500px;
+  padding-top: 150px;
+}
+
+.hero .hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation-delay: 0.6s;
+  padding-right: 500px;
+}
+
+.mockup{
+  width: 380px;
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-45%);
+
+}
+
+
+/* HEADER */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 10; 
+  transition: background 0.3s ease; }
+
+.header .container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.header .logo {
+  height: 50px; /* Taille du logo */
+  padding-right: 30px;
+
+}
+
+.header .nav {
+  display: flex; /* Affiche les liens côte à côte */
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative; /* Nécessaire pour l'effet souligné */
+  transition: color 0.3s ease; /* Douce transition pour la couleur */
+}
+
+.header .nav a::after {
+  content: ""; /* Crée une ligne pour souligner */
+  position: absolute;
+  bottom: -5px; /* Position sous le texte */
+  left: 0;
+  width: 0; /* Ligne masquée par défaut */
+  height: 2px; /* Épaisseur de la ligne */
+  background: #58C1B2; /* Couleur de la ligne */
+  transition: width 0.3s ease; /* Animation de la largeur */
+}
+
+.header .nav a:hover::after {
+  width: 100%; /* Affiche la ligne au survol */
+}
+
+.header .nav a:hover {
+  color: #58C1B2; /* Change la couleur du texte au survol */
+}
+
+
+div.left {
+width: 90%;
+}
+
+/* Boutons d'image dans Hero */
+.btn-group img {
+  height: 50px; /* Taille uniforme pour les boutons */
+  margin: 0 10px; /* Espacement entre les boutons */
+  transition: transform 0.3s ease; /* Effet au survol */
+}
+
+.btn-group img:hover {
+  transform: scale(1.1); /* Zoom au survol */
+}
+
+img .mockup{
+  width: 100px;
+  height: 100px;
+}
+
+/* SECTION NOS VALEURS */
+.valeurs {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.valeurs h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.intro-valeurs {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.grille-valeurs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.valeur {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valeur:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.valeur img {
+  width: 20%;
+  margin-bottom: 1rem;
+}
+.img-velo{
+  width: 100%;
+}
+
+.valeur h3 {
+  font-size: 1.5rem;
+  color: #58C1B2;
+  margin-bottom: 0.5rem;
+}
+
+.valeur p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+
+
+/* SECTION FONCTIONNALITÉS */
+.features {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grille responsive */
+  gap: 2rem;
+}
+
+.feature-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item img {
+  width: 680px;
+  margin-bottom: 0.6rem;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #58C1B2;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px); /* Effet de déplacement vers le haut */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+}
+
+
+/* SECTION STATISTIQUES */
+.statistiques {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.statistiques h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.grille-statistiques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.statistique h3 {
+  font-size: 3rem;
+  color: #58C1B2;
+}
+
+.statistique p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+
+/* SECTION AVIS */
+/* SECTION AVIS UTILISATEUR */
+.avis-utilisateur {
+  padding: 4rem 1rem;
+  background: white;
+  text-align: center;
+}
+
+/* Conteneur principal */
+.contenu-avis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* Image à gauche, plus grande */
+.image-avis {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texte à droite */
+.texte-avis {
+  max-width: 800px;
+  font-size: 1rem; /* Réduction du texte */
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.texte-avis h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.texte-avis h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #58C1B2;
+  font-style: italic;
+}
+
+/* Responsive - Mise en page en deux colonnes */
+@media (min-width: 768px) {
+  .contenu-avis {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .image-avis {
+    width: 100%; /* Image plus grande */
+  }
+
+  .texte-avis {
+    width: 45%; /* Texte plus petit et bien ajusté */
+    padding-left: 2rem;
+  }
+}
+
+
+/* SECTION POURQUOI CHOISIR TANDEM */
+.pourquoi-tandem {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.pourquoi-tandem h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.intro-pourquoi {
+  font-size: 1.2rem;
+  color: #010101;
+  margin-bottom: 2rem;
+}
+
+.grille-pourquoi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.avantage {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avantage:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.avantage img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.avantage h3 {
+  font-size: 1.5rem;
+  color: #58C1B2;
+  margin-bottom: 0.5rem;
+}
+
+.avantage p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+
+
+.persona {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.persona img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+
+/* SECTION TÉLÉCHARGEMENT */
+.download {
+  background: linear-gradient(135deg, #58C1B2, #A0D4C4); /* Dégradé élégant */
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem; /* Espacement généreux */
+}
+
+.download h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.download p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: white;
+  color: #58C1B2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px; /* Boutons arrondis */
+  transition: all 0.3s ease; /* Animation douce */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.btn-secondary:hover {
+  background: #44A89A; /* Couleur accentuée */
+  color: white;
+  transform: scale(1.05); /* Légère mise en avant */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre renforcée */
+}
+
+/* SECTION PERSONA */
+.persona {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.persona h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Contenu principal : grille avec image et description */
+.contenu-persona {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.image-persona img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description-persona ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.description-persona ul li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.description-persona ul li strong {
+  color: #58C1B2;
+  font-weight: bold;
+}
+
+/* Responsive : affichage en colonne sur petits écrans */
+@media (max-width: 768px) {
+  .contenu-persona {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .description-persona ul {
+    text-align: center;
+  }
+}

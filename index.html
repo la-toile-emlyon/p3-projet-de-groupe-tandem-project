@@ -1,16 +1,228 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-  </head>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandem - Application de rencontre pour cyclistes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="images/logo.png" alt="Logo Tandem" class="logo">
+      <nav class="nav">
+        <a href="doc.html">Documentation</a>
+        <a href="#download">Téléchargement</a>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
-  </body>
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="left">
+      <h2>Rencontrez des passionnés de vélo près de chez vous</h2>
+      <p class="hero-subtitle">Tandem vous aide à rencontrer des cyclistes près de chez vous et à planifier des sorties.</p>
+      <div class="btn-group">
+        <a href="https://www.apple.com/app-store/" target="_blank">
+          <img src="images/Download_on_the_App_Store_Badge_FRCA_RGB_blk.svg.png" alt="Télécharger sur l'App Store">
+        </a>
+        <a href="https://play.google.com/store" target="_blank">
+          <img src="images/Google_Play_Store_badge_FR.svg.png" alt="Télécharger sur Google Play">
+        </a>
+      </div>
+    </div>
+      <img src="images/mockup-tandem.png" class="mockup" alt="mockup Tandem">
+
+    </div>  
+  </section>
+
+
+  <section id="pourquoi-tandem" class="pourquoi-tandem">
+    <div class="conteneur">
+      <h2>Pourquoi choisir Tandem ?</h2>
+      <p class="intro-pourquoi">
+        Tandem vous aide à rencontrer des cyclistes qui partagent votre passion, 
+        en mettant l'accent sur vos centres d’intérêt et votre style de pratique.
+      </p>
+      <div class="grille-pourquoi">
+        <!-- 1. Passion avant tout -->
+        <div class="avantage">
+          <img src="images/noun-bicycle-37389 1.svg" alt="Passion avant tout : dessin de vélo">
+          <h3>Passion avant tout</h3>
+          <p>Rencontrez des cyclistes en fonction de vos centres d’intérêt, et non de votre apparence.</p>
+        </div>
+        <!-- 2. Pour tous les niveaux -->
+        <div class="avantage">
+          <img src="images/noun-people-33177 1.svg" alt="Image de deux personnes ">
+          <h3>Pour tous les niveaux</h3>
+          <p>Que vous soyez débutant ou expert, trouvez des partenaires qui roulent à votre rythme.</p>
+        </div>
+        <!-- 3. Algorithme intelligent -->
+        <div class="avantage">
+          <img src="images/Vector ALGO.svg" alt="Dessin noir et blanc algorithme">
+          <h3>Recommandations intelligentes</h3>
+          <p>Un algorithme vous connecte aux cyclistes qui correspondent à vos habitudes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="valeurs" class="valeurs">
+    <div class="conteneur">
+      <h2>Nos valeurs</h2>
+      <p class="intro-valeurs">
+        Chez Tandem, nous croyons en un monde plus connecté, inclusif et durable. Voici les valeurs qui nous animent.
+      </p>
+      <div class="grille-valeurs">
+        <!-- 1. Écologie -->
+        <div class="valeur">
+          <img src="images\image_41-removebg-preview.png" class="Écologie" alt="Écologie">
+          <h3>Écologie</h3>
+          <p>Nous promouvons le vélo comme un mode de transport écoresponsable pour un monde plus vert.</p>
+        </div>
+        <!-- 2. Sécurité -->
+        <div class="valeur">
+          <img src="images/secu.png" class="Sécurité" alt="Sécurité">
+          <h3>Sécurité</h3>
+          <p>Tandem garantit une protection des données et des profils vérifiés pour une expérience sécurisée.</p>
+        </div>
+        <!-- 3. Communauté -->
+        <div class="valeur">
+          <img src="images/Vector.svg" class="Communauté" alt="Communauté">
+          <h3>Communauté</h3>
+          <p>Nous mettons en avant des connexions basées sur des passions communes, sans jugement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Comment ça marche ?</h2>
+      <div class="features-grid">
+        <!-- Fonctionnalité 1 -->
+        <div class="feature-item">
+          <img src="images\fonctionnalite-rencontre.png" id="img1" alt="Rechercher des partenaires">
+          <h3>Rechercher des partenaires</h3>
+          <p>Utilisez la géolocalisation pour trouver des cyclistes près de chez vous.</p>
+        </div>
+        <!-- Fonctionnalité 2 -->
+        <div class="feature-item">
+          <img src="images\fonctionctionnalite-conversation.png"  alt="Messagerie intégrée">
+          <h3>Discuter facilement</h3>
+          <p>Un système de messagerie intégré pour échanger avec vos partenaires.</p>
+        </div>
+        <!-- Fonctionnalité 3 -->
+        <div class="feature-item">
+          <img src="images\fonctionnalite-itineraire2.png" alt="Planifier des sorties">
+          <h3>Planifier des sorties</h3>
+          <p>Organisez des sorties et des événements pour rouler ensemble.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+<section id="avis-utilisateur" class="avis-utilisateur">
+  <div class="conteneur">
+    <div class="contenu-avis">
+      <img src="images/conjoint-et-cynthia.jpg" alt="Mon expérience avec Tandem" class="image-avis">
+      <div class="texte-avis">
+        <h2>Mon expérience avec Tandem</h2>
+        <p>
+          "Cela fait maintenant un mois que j'utilise Tandem, et je dois dire que c'est une expérience incroyable.  
+          Grâce à cette application, j'ai rencontré plusieurs passionnés de vélo, j'ai participé à des sorties en groupe,  
+          et surtout... j'ai rencontré une personne spéciale avec qui je partage désormais bien plus que des randonnées.  
+          Tandem a totalement changé ma manière de vivre ma passion, et je recommande à tous ceux qui aiment le vélo  
+          d'essayer l'application !"
+        </p>
+        <h3>- Fedi, utilisateur de Tandem</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="statistiques" class="statistiques">
+  <div class="conteneur">
+    <h2>Statistiques impressionnantes</h2>
+    <div class="grille-statistiques">
+      <div class="statistique">
+        <h3>5 000+</h3>
+        <p>Cyclistes connectés dans toute la France.</p>
+      </div>
+      <div class="statistique">
+        <h3>1 000+</h3>
+        <p>Sorties organisées chaque mois.</p>
+      </div>
+      <div class="statistique">
+        <h3>98%</h3>
+        <p>De satisfaction parmi nos utilisateurs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+  <section id="download" class="download">
+    <div class="container">
+      <h2>Téléchargez l'application</h2>
+      <p>Rejoignez la communauté des cyclistes sur Tandem dès maintenant.</p>
+      <div class="btn-group down">
+ 
+        <a href="https://www.apple.com/app-store/" target="_blank">
+          <img src="images/Download_on_the_App_Store_Badge_FRCA_RGB_blk.svg.png" alt="Télécharger sur l'App Store">
+        </a>
+        <a href="https://play.google.com/store" target="_blank">
+          <img src="images/Google_Play_Store_badge_FR.svg.png" alt="Télécharger sur Google Play">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <!-- Grille principale -->
+      <div class="footer-grid">
+        <!-- Bloc description -->
+        <div class="footer-tandem">
+          <h3>Tandem</h3>
+          <p>Rejoignez notre communauté de cyclistes et partagez votre passion pour le vélo. 
+          <br>
+          Explorez, connectez-vous, et roulez ensemble.</p>
+        </div>
+        <div>
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="doc.html">Documentation</a></li>
+            <br
+            <li><a href="#download">Téléchargement</a></li>
+          </ul>
+        </div>
+        <!-- Bloc réseaux sociaux -->
+        <div>
+          <h4>Suivez-nous sur nos réseaux!</h4>
+          
+          <div class="footer-social">
+            <a href="#"><img src="images\0458B0D6-BBA8-4F56-BE73-EC187CDA0CBF.png" alt="Twitter"></a>
+            <a href="#"><img src="images\7CEAEB13-B4FE-4C6B-AC15-C670BA9AE6ED (1).png"></a>
+            <a href="#"><img src="images\DA17397E-DB7E-459A-95E3-7B8B42926E38.png" alt="tiktok"></a>
+          </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tandem. Tous droits réservés.</p>
+        <p>
+          <a href="#">Mentions légales</a> | 
+          <a href="#">Politique de confidentialité</a> | 
+          <a href="#">Conditions d’utilisation</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
 </html>
